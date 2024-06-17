@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>🟢 Army Conference ...</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='conference_room_style.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="top_nav">
+        <div id="user_list" class="user_list"><span class="material-symbols-outlined">
+            group
+            </span><div id="user_counter" class="user_counter">0</div>
+            <div class="arrow_right">
+                <span class="material-symbols-outlined">
+                arrow_right
+                </span>
+            </div>
+        </div>
+
+        <div class="room_title">Army Conference</div>
+
+        <div id="chatting_window" class="chatting_window"><span class="material-symbols-outlined">
+            chat
+            </span></div>
+            
+    </div>
+
+    <br><br><br>
+
+
+    <div id="video_grid" class="video_grid">
+
+        <div id="big_screen" class="big_screen">
+
+            <div id="close_big_screen" class="close_big_screen"><span class="material-symbols-outlined">
+                close
+                </span>
+            </div>
+            
+            <div class="full_screen">
+            
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- <div id="stream__box"></div> -->
+
+    
+    <div id="video_controls" class="video_controls">
+        <div id="video_btn" class="video_btn active"><span class="material-symbols-outlined">
+            videocam
+            </span></div>
+        <div id="mic_btn" class="mic_btn active"><span class="material-symbols-outlined">
+            mic
+            </span></div>
+        <div id="leave_btn" class="leave_btn"><span class="material-symbols-outlined">
+            call_end
+            </span></div>
+        
+        <div id="copy_btn" class="copy_room_id"><span class="material-symbols-outlined">
+            content_copy
+            </span></div>
+
+
+        <div id="more_btn" class="more_options"><span class="material-symbols-outlined">
+            more_vert
+            </span></div>
+
+            <div id="more_options_dropdown" class="more_options_dropdown">
+                <ul>
+                    <div id="screen_share_btn" class="screen_share_btn"><span class="material-symbols-outlined">
+                        cast
+                        </span>
+                        <label class="pop_up_title">Screen casting</label>
+                    </div>
+
+                    <div id="kick_a_user" class="kick_a_user"><span class="material-symbols-outlined">
+                        person_remove
+                        </span>
+                        <label class="pop_up_title">Kick a User</label>
+                    </div>
+
+                    <div id="mute_a_remote_user_mic" class="mute_a_remote_user_mic"><span class="material-symbols-outlined">
+                        mic
+                        </span>
+                        <label class="pop_up_title">Mute a remote user mic</label>
+                    </div>
+
+                    <div id="mute_a_remote_user_video" class="mute_a_remote_user_video"><span class="material-symbols-outlined">
+                        videocam
+                        </span>
+                        <label class="pop_up_title">Mute a remote user video</label>
+                    </div>
+
+                    <div id="mute_all_remote_users_audio" class="mute_all_remote_users_audio"><span class="material-symbols-outlined">
+                        interpreter_mode
+                        </span>
+                        <label class="pop_up_title">Mute all remote users audio</label>
+                    </div>
+
+                    <div id="mute_all_remote_users_video" class="mute_all_remote_users_video"><span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined">
+                            video_library
+                            </span>
+                        </span>
+                        <label class="pop_up_title">Mute all remote users video</label>
+                    </div>
+
+                </ul>
+            </div> 
+
+    </div>
+
+
+    <div id="join-video-conference" class="join-video-conference">Start Stream</div>
+
+
+    <div id="admin_action_form" class="admin_action_form">
+        <div id="close_action_form" class="close_message_btn"><span class="material-symbols-outlined">
+            close
+            </span>
+        </div>
+
+        <label id="action_form_title">Action Form</label>
+        <input id="action_form_input_text" class="action_form_input" type="text" placeholder="Enter a user's name" required>
+        <input id="action_controls" class="action_controls" type="text" required>
+        <input id="action_form_go_btn" class="action_form_btn" type="submit" value="Go">
+    </div>
+
+
+    <div id="room_members" class="room_members">
+
+        <div class="members_area">
+        
+        <div class="sticky_header">
+            <div class="members_area_details">Channel Members <div id="members_count" class="members_count">0</div></div>
+        </div>
+
+        <div id="close_user_btn" class="close_user_btn"><span class="material-symbols-outlined">
+            close
+            </span></div>
+
+
+            <div class="scrollable_content" id="scrollable_content">
+                <!-- List of users holder -->
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="message_container">
+        <div id="close_message_btn" class="close_message_btn"><span class="material-symbols-outlined">
+            close
+            </span></div>
+
+        <div id="message_area" class="message_area">
+        </div>
+
+        
+        <input id="message_text_area" class="message_text_area" type="text" placeholder="Say hi ..." required>
+    </div>
+
+    <div id="individual_user_options" class="individual_user_options">
+        <div class="options">
+            <div class="usernameOption">Musa</div>
+            <div id="muteMic" class="muteMic">Mute Mic</div>
+            <div id="muteVideo" class="muteVideo">Mute Video</div>
+            <div id="removeVideoFrame" class="removeVideoFrame">Remove Video Frame</div>
+            <div id="kickMember" class="kickUser">Kick</div>
+        </div>
+    </div>
+
+
+    <div id="snackbar">Copied Room Id</div>
+</body>
+<script src="js/conference_widgets_controller.js"></script>
+<script src="js/commands_control.js"></script>
+<script src="js/conference_rtm.js"></script>
+<script src="js/agora-rtm-sdk-1.5.1.js"></script>
+<script src="js/agora-rtc.js"></script>
+<script src="js/conference_room.js"></script>
+</html>

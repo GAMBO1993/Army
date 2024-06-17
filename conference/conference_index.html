@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Teleconferencing System for Military Operations</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="conference_index_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<div id="home_btn" class="home_btn"><span class="material-symbols-outlined">
+    home
+    </span>
+</div>
+<div class="header_title">Teleconferencing System for Military Operations</div>
+<div id="join_btn_form" class="join_btn_form">
+    <span class="material-symbols-outlined">
+        meeting_room
+    </span>
+    <label class="join_button">Join Room</label>
+</div>
+<body>
+
+    <form id="create_room_form" class="create_room_form">
+        <label id="create_channel_title" class="create_channel_title">Create Room</label>
+        <label class="text_name">Username</label>
+        <input id="username_conference" type="text" name="username" placeholder="Username" required>
+        <label class="text_name">Room Name</label>
+        <input id="roomname_conference" type="text" placeholder="Room Name" name="roomId" required>
+        <input class="room_code" name="roomId">
+        <input type="submit" value="Start Conference">
+    </form>
+
+    <div id="join_room_form_container" class="join_room_form_container">
+        <div id="close_join_form_btn" class="close_join_form_btn"><span class="material-symbols-outlined">
+            close
+            </span>
+        </div>
+        <form class="join_room_form">
+            <label class="text_name">Join Room Form</label><p></p>
+            <input name="join_username_field" class="join_input_field" type="text" placeholder="Username" required><p></p>
+            <input id="join_roomId_field" class="join_input_field" type="text" placeholder="Room ID" required><p></p>
+            <input type="submit" value="Join"><p></p>
+        </form>
+    </div>
+
+
+    <label class="copy_rights">Nigerian Military copyrights &copy 2024/2025</label>
+    
+</body>
+<script src="js/conference_index_form.js"></script>
+</html>

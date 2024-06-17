@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Broadcasting...</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='broadcast_main.css'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..400,0..1,-50..200" />
+</head>
+<body>
+
+    <div class="members">
+        <div class="eye-icon">
+            <span class="material-symbols-outlined">
+                visibility
+                </span>
+        </div>
+        <label class="audience-number" id="classlist">0</label>
+    </div>
+
+
+    <div id="close-list" class="close-list">
+        <span class="material-symbols-outlined">
+            chevron_left
+            </span>
+        </div>
+
+    <div id="open-list" class="open-list"><span class="material-symbols-outlined">
+        chevron_right
+        </span></div>
+    <div id="list-of-audience" class="list-of-audience">
+        <ul>
+          <!-- Admins -->
+          <li id="admins" class="admins">
+            <img class="avatrs" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2864&q=80 us this url for the image">
+            John
+          </li>
+          
+
+          <!-- Moderators -->
+          <li id="moderators" class="moderators">
+            <img class="avatrs" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2864&q=80 us this url for the image">
+            Mike
+          </li>
+          
+
+          <!-- Audience -->
+          <!-- <li>
+            <img class="avatrs" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2864&q=80 us this url for the image">
+            Jane
+          </li> -->
+          
+          
+        </ul>
+      </div>
+
+
+      <div id="open-message-container"><span class="material-symbols-outlined">
+        chevron_left
+        </span></div>
+      
+
+      <div id="message-cover" class="message-cover">
+        <label class="message-top-details">Messages</label>
+        <div id="close-message-container"><span class="material-symbols-outlined">
+          chevron_right
+          </span></div>
+        <div id="inner-message" class="inner-message">
+        
+        <!-- <div class="message-conent">
+          <label class="message-name">Ammy</label><p></p>
+          <label class="message-message">Coming home now</label>
+        </div> -->
+
+        <!-- <div class="bot-message">
+          <label class="bot-name">BOT</label><p></p>
+          <label class="bot-message">Welcome</label>
+        </div> -->
+
+        <form class="message__form" id="message__form">
+          <input type="text" name="message_field" id="editing-field" class="editing-field" placeholder="Say hi ..." required>
+        </form>
+
+        </div>
+      </div>
+      
+    
+    <div id="stream-wrapper">
+        <div id="video-streams"></div>
+    </div>
+      
+    <div id="stream__box"></div>
+    
+    <!-- ---------------- Admins Controls ---------------- -->
+
+    <div id="stream-controls" class="floating-button" style="display: none;" >
+
+        <button id="camera-btn" class="active"><span class="material-symbols-outlined">
+            videocam
+            </span></button>
+
+        <button id="mic-btn" class="active"><span class="material-symbols-outlined">
+            mic
+            </span></button>
+
+        <button id="leave-btn" class="power"><span class="material-symbols-outlined">
+            power_settings_new
+            </span></button>
+        <button id="screen-share-btn" class="share-screen"><span class="material-symbols-outlined">
+            screen_share
+            </span></button>
+        <button id="copy-btn" class="copy_btn"><span class="material-symbols-outlined">
+            content_copy
+            </span></button>
+    </div>
+
+    <!-- ---------------- Admins Controls End --------------- -->
+
+
+
+    <!-- --------------- Audience Controls --------------- -->
+
+    <div id="audience-controls" class="audience-floating-button" style="display: none;">
+      
+
+      <button id="audience-leave-btn" class="power"><span class="material-symbols-outlined">
+        power_settings_new
+      </span></button>
+
+      
+  </div>
+    
+
+  <!-- --------------- Audience Controls End ----------------- -->
+
+
+  <!-- --------- More options for a user --------------- -->
+
+  <div id="more_user_options" class="more_user_options">
+    <div class="more_options_contents">
+      <ul class="selected-user-name"></ul>
+      <ul id="demote" class="promotion_role_option">Demote to Audience</ul>
+      <ul id="promote" class="promotion_role_option">Promote to Moderator</ul>
+      <ul class="remove_user_frame">Remove from frame</ul>
+      <ul class="kick_user">Kick</ul>
+      <ul class="muv">Mute Video</ul>
+      <ul class="mum">Mute Microphone</ul>
+      <ul id="close_user_options" class="close_options_list">Close</ul>
+    </div>
+  </div>
+
+
+    <div id="snackbar">Copied Room Id</div>
+      
+    
+</body>
+<script src="js/agora-rtm-sdk-1.5.1.js"></script>
+<script src="js/agora-rtc.js"></script>
+<script src="js/room_rtm.js"></script>
+<script src="js/room.js"></script>
+</html>

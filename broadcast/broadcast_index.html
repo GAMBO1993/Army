@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VainLive Broadcast</title>
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+  <button id="home-floating-btn" class="home-floating-btn"><span class="material-symbols-outlined">
+    home
+    </span></button>
+
+  <!-- ------------ To join a room --------------- -->
+
+
+  <button class="floating-btn"><span class="material-symbols-outlined">
+    meeting_room
+    </span></button>
+
+  <div id="myModal" class="modal">
+		<form class="modal-content" id="join-form">
+			<span class="close">&times;</span>
+      <label class="label-join-form">Enter Broadcast ID</label><br>
+			<input class="name" id="username-id-string" type="text" placeholder="Username" name="joinname" required><br>
+			<input class="name" id="room-id-string" type="text" placeholder="Room ID" required>
+
+      <label for="invite-code" class="invite-code-label" style="display:none;">Invite Code</label>
+      <input type="text" id="invite-code" name="inviteCode" style="display:none;"><br>
+
+			<button type="submit">Submit</button>
+      
+		</form>
+	</div>
+
+
+  <!-- ------------- Join room end ----------------- -->
+  
+
+
+  <!-- ---------- To create Room ----------------- -->
+  <form class="create-form" id="index__form">
+    <label class="form-title">VainLive Broadcast</label>
+    <br><br>
+    <label class="roomName">Userame </label><br>
+    <input id="username-Id" name="createname" type="text" placeholder="Johnny Depp" required><br><br>
+    <label class="roomName">Room Name </label><br>
+    <input id="join-room-Id" name="room" type="text" placeholder="Jackie Chan's latest movies" required>
+    <br><br>
+    <input type="submit" value="Go">
+  </form>
+
+  <!-- ----------Create Room End -------------- -->
+
+  <label class="copy-rights">All rights reserved &copy Vainworld 2023/2024</label>
+</body>
+<script src="js/broadcast_index.js"></script>
+</html>

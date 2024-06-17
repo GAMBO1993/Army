@@ -1,0 +1,174 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: rgb(10, 76, 9); */
+    background-image: url(/back.jpg);
+    background-repeat: none;
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.home_btn{
+    color: white;
+    background-color: black;
+    display: flex;
+    position: absolute;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.home_btn:hover{
+    background-color: white;
+    color: black;
+    transition: .2s;
+}
+
+.header_title{
+    color: yellow;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.create_room_form {
+    background-color: rgb(27, 51, 20);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 350px;
+}
+
+.create_room_form label,
+.create_room_form input[type="text"]{
+    display: block;
+    margin: 10px;
+    width: 300px;
+}
+
+
+input[type="text"] {
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border: 2px rgba(255, 255, 255, 0.297) solid;
+    border-radius: 2px;
+    transition: .2s;
+}
+
+input[type="text"]:focus {
+    border: 2px solid purple;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    transition: .2s;
+}
+
+.room_code{
+    display: none;
+}
+
+.create_channel_title {
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.text_name{
+    color: white;
+}
+
+.copy_rights{
+    color: white;
+    position: absolute;
+    display: flex;
+    bottom: 20px;
+    left: auto;
+}
+
+.join_btn_form{
+    color: white;
+    background-color: rgb(52, 12, 52);
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+
+.join_button{
+    cursor: pointer;
+}
+
+
+.join_room_form_container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.join_room_form {
+    background-color: rgb(15, 56, 9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.close_join_form_btn{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 5px;
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.join_input_field{
+    width: 280px;
+}
