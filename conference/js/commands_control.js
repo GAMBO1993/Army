@@ -13,5 +13,6 @@ var userActualRole = sessionStorage.getItem('role');
 var hiddenToken = null
 
 let gotToConferencePage = () => {
-    window.location = 'conference_index.html'
+    // window.location = 'conference_index.html'
+    window.location = '/'
 }
