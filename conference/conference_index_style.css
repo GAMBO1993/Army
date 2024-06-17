@@ -5,7 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     /* background-color: rgb(10, 76, 9); */
-    background-image: url(/conference/pic/back.jpg);
+    background-image: url(back.jpg);
     background-repeat: none;
     background-size: cover;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
